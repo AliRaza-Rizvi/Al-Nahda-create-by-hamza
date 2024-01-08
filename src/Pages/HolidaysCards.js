@@ -133,9 +133,16 @@ const HolidaysCards = () => {
                     {
                         demmyData.map((ele, index) => (
                             <div key={index} delay={delayArray}  data-aos="fade-up" className="w-[100%]  rounded-[1rem] overflow-hidden bg-white shadow mb-[2rem]">
-                                <div className="h-[20rem] overflow-hidden w-full">
-                                    <Image  src={ele?.image} alt="" className='w-[100%] h-[100%] object-cover hover:scale-150 hover:transition-all hover:delay-300' />
-                                </div>
+                                <motion.div 
+                               
+                               whileHover={{ scale: [null, 1.2] }}
+                                transition={{ duration: 0.4 }}
+                                className="h-[20rem] overflow-hidden w-full">
+                                    <Image
+                                      whileHover={{ scale: [null, 1.2] }}
+                                      transition={{ duration: 0.4 }}
+                                    src={ele?.image} alt="" className='w-[100%] h-[100%] object-cover ' />
+                                </motion.div>
                                 <div className="p-[2rem]  text-center">
                                     <h3 className='text-[2rem] text-black'>{ele.heading}</h3>
                                     <p className='py-[1rem] text-[1.4rem] text-[#aaa]'>{ele.description.slice(0, 30)}</p>

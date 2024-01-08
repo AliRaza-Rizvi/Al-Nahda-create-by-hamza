@@ -85,10 +85,10 @@ const Navbar = () => {
                             }}
                             className='md:text-[2vw] lg:text-[1.6rem] ml-[1.5rem] mr-[1.5rem] hover:text-[#F58820] cursor-pointer font-normal sm:text-[2.5vw]  text-[#BABABA] ' ><a href="/"
                                 onClick={e => {
-                                    let home = document.getElementById("home");
+                                    let home = document.getElementById("header");
                                     e.preventDefault();
                                     home && home.scrollIntoView({ behavior: "smooth", block: "start" });
-                                    window.history.pushState("home", "home", "/home");
+                                    window.history.pushState("header", "header", "/header");
                                 }}>
                                 Home
                             </a>
@@ -293,9 +293,10 @@ const Navbar = () => {
 
                 {
                     !nav ? <motion.div
-                        initial={{ y: -700, }}
+                        initial={{ y: -600, }}
                         animate={{ y: 0, }}
-                        transition={{ duration: 0.5, }}
+                        transition={{ delay:0.5, }}
+                        type={"spring"}
                         className='transition-all ease-in-out duration-500 fixed top-[70px] bg-[#FAF5EE] left-0 w-full h-full  py-10'>
                         <ul className=''>
                             <motion.li whileHover={{ scale: 1.1 }} className='text-[5vw] w-fit   px-5  opacity-[0.5] py-2 rounded-[10rem]  border-2 border-[#F58220] text-[#F58220]  hover:bg-[#F58220] hover:text-white'>Home</motion.li>

@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import Navbar from '@/Pages/Navbar'
+import Navbar from '@/Components/Navbar'
 import Header from '@/Pages/Header'
 import Banner from '@/Pages/Banner'
 import HolidaysCards from '@/Pages/HolidaysCards'
@@ -11,7 +11,7 @@ import CarousalScreen from '@/Pages/CarousalScreen'
 import Feedback from '@/Pages/Feedback'
 import Footer from '@/Pages/Footer'
 import Branches from '@/Pages/Branches'
-import ComapnyProfile from '@/Pages/ComapnyProfile'
+
 import Progress from '@/Pages/Progress'
 
 

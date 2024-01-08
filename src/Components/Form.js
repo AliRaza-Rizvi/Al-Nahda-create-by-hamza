@@ -53,7 +53,7 @@ const Form = (
     return (
         <>
             <div className='form  w-[97.5%] mx-auto md:flex md:justify-between md:items-center md:mt-4 '>
-                <div className='autocomplete w-[90%] md:w-[45%]' data-aos="zoom-in" data-aos-delay="150">
+                <div  className='autocomplete w-[90%] md:w-[45%]' data-aos="zoom-in" data-aos-delay="150">
                     <label htmlFor={from} className='label hidden md:inline-block text-[1.6rem] text-[#333333c6]'>From</label>
                     <input type='text' className='w-[100%] h-[5rem] text-[2rem] border border-[#333333c6] md:mt-4 pl-4 pr-4 text-[#333333c6] uppercase font-bold focus:outline-none placeholder:capitalize placeholder:text-[1.5rem] placeholder:font-normal' style={{ background: theme === "Dark" && "black", transition: "all 1s ease-in" }} value={fromVal} placeholder='From' id={from} onChange={(e) => sendFrom(e)} />
                 </div>
